@@ -28,6 +28,8 @@ h1 {
   color: #b3261e;
 }
 
+/* Catalog */
+
 .session-list {
   list-style: none;
   margin: 24px 0 0;
@@ -58,6 +60,8 @@ h1 {
   color: #5f6368;
   font-size: 0.9rem;
 }
+
+/* Preview */
 
 .back-link {
   display: inline-block;
@@ -110,4 +114,148 @@ h1 {
   text-decoration: none;
   margin-top: 8px;
 }
+
+/* Run screen */
+
+.run-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.phase-work {
+  background: #c0392b;
+}
+
+.phase-rest {
+  background: #1a5276;
+}
+
+.phase-prestart {
+  background: #4a4a4a;
+}
+
+.phase-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.countdown {
+  font-size: 30vw;
+  font-weight: 800;
+  line-height: 1;
+  margin: 8px 0;
+}
+
+.exercise-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.instruction {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 4px;
+  max-width: 320px;
+}
+
+.round-info {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.next-up {
+  margin-top: 20px;
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.controls {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.pause-button {
+  width: 100%;
+  padding: 24px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  background: white;
+  color: #1a1a1a;
+}
+
+.secondary-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.secondary-controls button {
+  flex: 1;
+  padding: 14px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+}
+
+.secondary-controls button:disabled {
+  opacity: 0.4;
+}
+
+.end-screen {
+  background: #202124;
+}
+
+.end-stat {
+  font-size: 1.3rem;
+  margin: 8px 0;
+}
+
+.end-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.end-actions button,
+.end-actions a {
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+}
+
+.end-actions button {
+  background: white;
+  color: #1a1a1a;
+}
+
+.end-actions a {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
 
