@@ -1,20 +1,15 @@
-import { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import CatalogPage from './pages/CatalogPage.jsx'
+import PreviewPage from './pages/PreviewPage.jsx'
+import RunPage from './pages/RunPage.jsx'
 
 function App() {
-  const [status, setStatus] = useState('checking...')
-
-  useEffect(() => {
-    fetch('/api/health')
-      .then((res) => res.json())
-      .then((data) => setStatus(data.status))
-      .catch(() => setStatus('backend unreachable'))
-  }, [])
-
   return (
-    <div>
-      <h1>just-do-hiit</h1>
-      <p>Backend status: {status}</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<CatalogPage />} />
+      <Route path="/sessions/:id" element={<PreviewPage />} />
+      <Route path="/sessions/:id/run" element={<RunPage />} />
+    </Routes>
   )
 }
 
